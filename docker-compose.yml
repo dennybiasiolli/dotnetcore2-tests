@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+
+  aspnetcore:
+    build: docker/aspnetcore
+    ports:
+     - "80:80"
+    volumes:
+      - "./TodoApi:/app"
